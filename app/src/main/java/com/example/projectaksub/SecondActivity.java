@@ -15,7 +15,7 @@ public class SecondActivity extends AppCompatActivity {
 
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         String output = getIntent().getStringExtra("name");
         TextView tvOutput = findViewById(R.id.tv_output);
@@ -23,4 +23,14 @@ public class SecondActivity extends AppCompatActivity {
 
 
     }
+//
+//    @Override
+//    public boolean onOptionsItemSelected (@NonNull MenuItem item) {
+//        switch (item.getItemId()) {
+//            case android.R.id.home:
+//                this.finish();
+//                return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 }
